@@ -1,5 +1,7 @@
 from pyrogram import Client, filters
 
+CMD = ["/", "."]
+
 @Client.on_message(filters.command("suchitha",CMD))
 async def suchitha(_, message):
     pm = await message.reply.reply_text("FETURING ABOUT ME...............")

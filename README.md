@@ -28,9 +28,13 @@
 - [x] Inline Search
 - [x] Random pics
 - [x] ids and User info 
-- [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
+- [x] Stats
+- [x] Users, Chats, Ban, Unban, Leave, Disable, Channel
 - [x] Spelling Check Feature
 - [x] Custom File Caption
+- [x] Fun Games
+- [x] Crazy Commands
+- [x] Custom cmds
 
 ### Required Variables
 * `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.

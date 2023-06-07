@@ -1,9 +1,9 @@
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝗪𝗘𝗟𝗖𝗢𝗠+𝗧𝗢+𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑+𝐁𝐎𝐓!;𝗖𝗥𝗘𝗔𝗧𝗘𝗗+𝗕𝗬+𝗧𝗘𝗔𝗠+𝗣𝗥𝗢𝗙𝗘𝗦𝗦𝗢𝗥+𝗕𝗢𝗧!;𝗔+𝗦𝗜𝗠𝗣𝗟𝗘+𝗧𝗚+𝗔𝗨𝗧𝗢𝗙𝗜𝗟𝗧𝗘𝗥+𝗕𝗢𝗧!)</p>
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝙃𝙀𝙔+𝙒𝙀𝙇𝙇𝘾𝙊𝙈𝙀+𝙏𝙊+𝙎𝙐𝘾𝙃𝙄𝙏𝙃𝘼+𝘽𝙊𝙏;𝙏𝙃𝙄𝙎+𝘽𝙊𝙏+𝙄𝙎+𝙈𝘼𝘿𝙀+𝘽𝙔+𝙉𝙏𝙈;𝙏𝙃𝙀+𝘽𝙀𝙎𝙏+𝘼𝙐𝙏𝙊+𝙁𝙄𝙇𝙏𝙀𝙍+𝘽𝙊𝙏)</p>
 <p align="center">
-  <img src="Logo/PROFESSOR-BOT.jpeg" alt="MKN BOTZ LOGO">
+  <img src="Logo/SUCHITHA_BOT.jpeg" alt="NTM BOTS">
 </p>
 <h1 align="center">
-  <b> 𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑 𝐁𝐎𝐓</b>
+  <b> 𝗦𝗨𝗖𝗛𝗜𝗧𝗛𝗔_𝗕𝗢𝗧</b>
 </h1>
 
 [![Stars](https://img.shields.io/github/stars/MrMKN/PROFESSOR-BOT?style=flat-square&color=yellow)](https://github.com/MrMKN/PROFESSOR-BOT/stargazers)

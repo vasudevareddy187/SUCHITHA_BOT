@@ -6,7 +6,8 @@
   <b> 𝗦𝗨𝗖𝗛𝗜𝗧𝗛𝗔_𝗕𝗢𝗧</b>
 </h1>
 
-
+## Demo Bot
+* [![DEMO BOT](https://img.shields.io/static/v1?label=DEMO&message=BOT&color=critical)](https://t.me/SUCHITHA1BOT)
 
 ## Features
 

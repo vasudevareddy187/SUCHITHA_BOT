@@ -14,7 +14,7 @@
 - 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁 👉 :<a href=https://t.me/llathu63035>𝗡𝗘𝗪 𝗧𝗘𝗟𝗨𝗚𝗨 𝗠𝗢𝗩𝗜𝗘𝗦</a>
 
 <b>DEVS:</b>
--  Đê∨ ₁¹ <a href=https://t.me/TG_LATHEESH>𝗟𝗔𝗧𝗛𝗘𝗘𝗦𝗛</a>
+- Đê∨ ₁¹ <a href=https://t.me/TG_LATHEESH>𝗟𝗔𝗧𝗛𝗘𝗘𝗦𝗛</a>
 - Đê∨  ₂² <a href=https://t.me/sula54321>𝗕𝗕</a>"""
 
     FILE_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐌𝐨𝐝𝐮𝐥𝐞../
@@ -101,8 +101,8 @@ these are the extra features of this bot
 <b>Commands and Usage:</b>
 • /myid - <code>get id of a specifed user.</code>
 • /getinfo  - <code>get information about a user.</code>
-• /movinfo  - <code>get the film information from various sources.</code>"""
-• /genpw - <code> This coommand will generate an password for you which will here only until you delete it.</code>
+• /movinfo  - <code>get the film information from various sources.</code>
+• /genpw - <code>This coommand will generate an password for you which will here only until you delete it.</code>"""
 
     ADMIN_TXT = """<b>ɴᴏᴛᴇ:</b>
 <code>Tʜɪs Mᴏᴅᴜʟᴇ Oɴʟʏ Wᴏʀᴋs Fᴏʀ Mʏ Aᴅᴍɪɴs</code>

@@ -6,14 +6,6 @@
   <b> 𝗦𝗨𝗖𝗛𝗜𝗧𝗛𝗔_𝗕𝗢𝗧</b>
 </h1>
 
-[![Stars](https://img.shields.io/github/stars/Alatheesh/SUCHITHA_BOT?style=flat-square&color=yellow)](https://github.com/Alatheesh/SUCHITHA_BOT/stargazers)
-[![Forks](https://img.shields.io/github/forks/Alatheesh/SUCHITHA_BOT?style=flat-square&color=orange)](https://github.com/Alatheesh/SUCHITHA_BOT/fork)
-[![Size](https://img.shields.io/github/repo-size/Alatheesh/SUCHITHA_BOT?style=flat-square&color=green)](https://github.com/Alatheesh/SUCHITHA_BOT)   
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.Alatheesh/SUCHITHA_BOT)   
-[![Contributors](https://img.shields.io/github/contributors/Alatheesh/SUCHITHA_BOT?style=flat-square&color=green)](https://github.com/Alatheesh/SUCHITHA_BOT/graphs/contributors)
-[![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/Alatheesh/SUCHITHA_BOT/blob/main/LICENSE)
-[![Sparkline](https://stars.medv.io/Alatheesh/SUCHITHA_BOT.svg)](https://stars.medv.io/Alatheesh/SUCHITHA_BOT)
-
 
 
 ## Features
@@ -116,4 +108,18 @@ funcmd - to get the fun commands to play with the bot .
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
 Licensed under [GNU AGPL 2.0.](https://github.com/EvamariaTG/evamaria/blob/master/LICENSE)
 Selling The Codes To Other People For Money Is *Strictly Prohibited*.
+
+[![Stars](https://img.shields.io/github/stars/Alatheesh/SUCHITHA_BOT?style=flat-square&color=yellow)](https://github.com/Alatheesh/SUCHITHA_BOT/stargazers)
+
+[![Forks](https://img.shields.io/github/forks/Alatheesh/SUCHITHA_BOT?style=flat-square&color=orange)](https://github.com/Alatheesh/SUCHITHA_BOT/fork)
+
+[![Size](https://img.shields.io/github/repo-size/Alatheesh/SUCHITHA_BOT?style=flat-square&color=green)](https://github.com/Alatheesh/SUCHITHA_BOT)   
+
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.Alatheesh/SUCHITHA_BOT)   
+
+[![Contributors](https://img.shields.io/github/contributors/Alatheesh/SUCHITHA_BOT?style=flat-square&color=green)](https://github.com/Alatheesh/SUCHITHA_BOT/graphs/contributors)
+
+[![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/Alatheesh/SUCHITHA_BOT/blob/main/LICENSE)
+
+[![Sparkline](https://stars.medv.io/Alatheesh/SUCHITHA_BOT.svg)](https://stars.medv.io/Alatheesh/SUCHITHA_BOT)
 

@@ -1,6 +1,7 @@
 import random
 import asyncio
 from pyrogram import Client, filters
+from pyrogram.types import Message
 
 @Client.on_message(filters.command("funcmd")) 
 async def funcmd(_, message):
@@ -58,7 +59,7 @@ emojis = ["😀 Grinning", "😃 Smiling", "😄 Grinning With Smiling Eyes",
           "😓 Downcast With Sweat", "🤗 Hugging"]
 
 @Client.on_message(filters.command("botmood"))
-async def mood_command_handler(_, message):
+async def suchitha_command_handler(client: Client, message: Message):
       # adding message for the reply 
      mood_checking_msg = await message.reply_text("CHECKING MY MOOD....................")
       # setting sleep for 5 seconds

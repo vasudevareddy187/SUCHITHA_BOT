@@ -45,4 +45,4 @@ async def suchitha_command_handler(client: Client, message: Message):
     # Choose a random emoji from the list
     random_emoji = random.choice(emojis)
     # Send the emoji as a message reply
-    await mood_checking_msg.edit(random_emoji)
+    await mood_checking_msg.edit("MY MOOD IS LOOKING LIKE"\n\n {random_emoji})

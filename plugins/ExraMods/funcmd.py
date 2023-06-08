@@ -35,6 +35,7 @@ emojis = ["😀 Grinning", "😃 Smiling", "😄 Grinning With Smiling Eyes",
           "😰 Anxious With Sweat", "😥 Sad but Relieved",
           "😓 Downcast With Sweat", "🤗 Hugging"]
 
+
 @Client.on_message(filters.command("botmood"))
 async def suchitha_command_handler(client: Client, message: Message):
     # adding message for the reply 

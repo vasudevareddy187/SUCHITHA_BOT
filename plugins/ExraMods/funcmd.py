@@ -1,10 +1,12 @@
 import random
+import asyncio
 from pyrogram import Client, filters
 
 @Client.on_message(filters.command("funcmd")) 
 async def funcmd(_, message):
     hm = await message.reply_text("GETTING ALL MY FUN COMMANDS READY................")
-    await hm.edit("/iloveu - TO PROPOSE THE BOT.\n\n/suchitha - TO KNOW ABOUT THE BOT. \n\n/botmood - TO KNOW THE BOT MOOD. ")
+    await asyncio.sleep(5)
+    await hm.edit("/iloveu - TO PROPOSE THE BOT.\n\n/suchitha - TO KNOW ABOUT THE BOT. \n\n/botmood - TO KNOW THE BOT MOOD.\n\n/lovestory - TO GET A SMALL LOVE STORY FOR TIME PASS.  ")
 
    
 emojis = ["😀 Grinning", "😃 Smiling", "😄 Grinning With Smiling Eyes",
@@ -57,7 +59,11 @@ emojis = ["😀 Grinning", "😃 Smiling", "😄 Grinning With Smiling Eyes",
 
 @Client.on_message(filters.command("botmood"))
 async def mood_command_handler(_, message):
+      # adding message for the reply 
+     mood_checking_msg = await message.reply_text("CHECKING MY MOOD....................")
+      # setting sleep for 5 seconds
+     await asyncio.sleep(5)
     # Choose a random emoji from the list
     random_emoji = random.choice(emojis)
     # Send the emoji as a message reply
-    await message.reply_text(random_emoji)
+    await mood_checking_msg.edit(random_emoji)

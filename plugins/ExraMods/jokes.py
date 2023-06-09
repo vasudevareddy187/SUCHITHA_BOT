@@ -307,7 +307,7 @@ jokes = [
     
 ]
 
-@Client.on_message(filters.command("joke"))
+@Client.on_message(filters.command("jokes"))
 
 async def joke(_, message):
 

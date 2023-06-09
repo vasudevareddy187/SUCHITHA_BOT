@@ -1,4 +1,5 @@
 import requests
+from pyrogram import Client
 
 @Client.on_message(filters.command("joke"))
 

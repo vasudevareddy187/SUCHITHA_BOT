@@ -188,15 +188,14 @@ async def pm_spoll_choker(msg):
     await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
     
     
-import asyncio
+
+
 
 async def delete_after_10sec(message):
     await asyncio.sleep(10)
     try:
         await message.delete()
     except Exception as e:
-        # handle any exception that might occur while deleting the message
-        pass
-
+        print(f"Error deleting message: {e}")
 
 

@@ -197,5 +197,8 @@ async def delete_after_10sec(message):
         await message.delete()
     except Exception as e:
         print(f"Error deleting message: {e}")
+        
+asyncio.ensure_future(delete_after_10sec(hehe))
 
 
+       

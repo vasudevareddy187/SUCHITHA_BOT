@@ -191,14 +191,3 @@ async def pm_spoll_choker(msg):
 
 
 
-async def delete_after_10sec(message):
-    await asyncio.sleep(10)
-    try:
-        await message.delete()
-    except Exception as e:
-        print(f"Error deleting message: {e}")
-        
-asyncio.ensure_future(delete_after_10sec(hehe))
-
-
-       

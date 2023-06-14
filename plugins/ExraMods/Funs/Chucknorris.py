@@ -2,6 +2,8 @@ import random
 
 import asyncio
 
+import Client,filters 
+
 @Client.on_message(filters.command("chucknorris"))
 
 async def chucknorris_command_handler(client: Client, message: Message):

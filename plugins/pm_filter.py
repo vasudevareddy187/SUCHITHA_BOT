@@ -62,6 +62,12 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             btn.append([
         InlineKeyboardButton(text="Owner", url="https://t.me/c/1628469349/721")
     ])
+
+        btn.insert(0,
+        [ 
+	    InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://telegram.me/llathu63035 ')
+        ] 
+                  )
             
     if offset != "":
         key = f"{message.chat.id}-{message.id}"

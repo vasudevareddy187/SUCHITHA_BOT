@@ -30,7 +30,6 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS' ,'https://telegra.ph/file/75f58d091cccefade8d5b.jpg https://telegra.ph/file/c4ddf6a9d136cb1735bb1.jpg https://telegra.ph/file/b36685221ce5ac41ad667.jpg https://telegra.ph/file/7f59377ace528148d15bd.jpg https://telegra.ph/file/e006737306ad1c5c16192.jpg https://telegra.ph/file/f8b495d98fd4d89c99150.jpg https://telegra.ph/file/320cdc500bc7e3d1c9e94.jpg https://telegra.ph/file/90ea7771a7c61e2d45d72.jpg https://telegra.ph/file/0d6adc21a51a32c3ac803.jpg https://telegra.ph/file/3fd5587f5bf4c3c107c91.jpg https://telegra.ph/file/2182f0c156d4ae25c8913.jpg')).split()
 BOT_START_TIME = time()
-URL = int(environ.get('URL','https://t.me/llathu63035'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
@@ -62,6 +61,7 @@ BUTTON_LOCK = environ.get("BUTTON_LOCK", "True")
 # url shortner
 SHORT_URL = environ.get("SHORT_URL")
 SHORT_API = environ.get("SHORT_API")
+URL = environ.get('URL','https://t.me/llathu63035')
 
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "300"))

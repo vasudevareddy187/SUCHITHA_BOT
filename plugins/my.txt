@@ -1,0 +1,103 @@
+#KEYS - VALUES 
+
+ADMINS - 5015265732 907416893
+
+API_HASH - 59f97cf6abf6201b862551f66eae0762
+
+API_ID - 18019745
+
+AUTH_CHANNEL - -1001753211376
+
+AUTH_GROUPS - 
+
+BOT_TOKEN - 6082750364:AAFDQgYFvp3JxjoEJj5nKGctb0G25Yky0ms
+
+BUTTON_LOCK - True
+
+BUTTON_LOCK_TEXT - ⚠️ 𝙃𝙚𝙮 {query}! 𝙏𝙝𝙖𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪. 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣
+
+CHANNELS - -1001515438076 -1001911870339 -1001948256614 -1001631180853
+
+COLLECTION_NAME - Telegram_files
+
+CUSTOM_FILE_CAPTION - Hey {mention}👋
+
+{file_name}
+
+🔘 size - {file_size}
+
+╔═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
+💥 𝙅𝙊𝙄𝙉 :- @onlyforbotupdates
+💥 𝙅𝙊𝙄𝙉 :- @llathu63035
+╚═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝ 
+
+CREDITS - 🇱 🇦 🇹 🇭 🇪 🇪 🇸 🇭 
+
+DATABASE_NAME - Cluster0
+
+DATABASE_URI - mongodb+srv://lathu:lathu@cluster0.etyntnt.mongodb.net/?retryWrites=true&w=majority
+
+FORCE_SUB_TEXT - **𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!**
+
+G_FILTER - True
+
+IMDB - True
+
+IMDB_DELET_TIME - 300
+
+IMDB_TEMPLATE - Requested by : {message.from_user.mention}
+
+ Title: {title}
+ Genres: {genres}
+ Year: {year}
+ Rating: {rating}
+ Languages : {languages}
+ Dɪʀᴇᴄᴛᴏʀ: {director}
+ Pʀᴏᴅᴜᴄᴇʀ: {producer}
+ wʀɪᴛᴇʀ: {writer}
+ RunTime: {runtime} Minutes
+ Release Info : {release_date}
+ Countries : {countries}
+ Sᴛᴏʀy : {plot}
+
+
+Requested by : {message.from_user.mention}
+
+PROVIDED BY 🇳 🇹 🇲 
+
+DEVELOPER 🇱 🇦 🇹 🇭 🇪 🇪 🇸 🇭 
+
+
+LOG_CHANNEL - -1001628469349
+
+MAX_RIST_BTNS - 10
+
+PICS - https://telegra.ph/file/75f58d091cccefade8d5b.jpg https://telegra.ph/file/c4ddf6a9d136cb1735bb1.jpg https://telegra.ph/file/b36685221ce5ac41ad667.jpg https://telegra.ph/file/7f59377ace528148d15bd.jpg https://telegra.ph/file/e006737306ad1c5c16192.jpg https://telegra.ph/file/f8b495d98fd4d89c99150.jpg https://telegra.ph/file/320cdc500bc7e3d1c9e94.jpg https://telegra.ph/file/90ea7771a7c61e2d45d72.jpg https://telegra.ph/file/0d6adc21a51a32c3ac803.jpg https://telegra.ph/file/3fd5587f5bf4c3c107c91.jpg https://telegra.ph/file/2182f0c156d4ae25c8913.jpg
+
+PMFILTER - True
+
+PM_IMDB - True
+
+P_TTI_SHOW_OFF - True
+
+RemoveBG_API - UGu6pFV8LbToPTVMQHeuQfPz
+
+SINGLE_BUTTON - True
+
+START_MESSAGE - 👋 𝙷𝙴𝙻𝙾 {user}
+
+𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 {bot},
+𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽...
+
+DEVELOPED BY LATHEESH
+
+SUPPORT_CHAT - llathu63035
+
+WEBHOOK - True
+
+WELCOM_PIC - https://telegra.ph/file/75f58d091cccefade8d5b.jpg https://telegra.ph/file/c4ddf6a9d136cb1735bb1.jpg https://telegra.ph/file/b36685221ce5ac41ad667.jpg https://telegra.ph/file/7f59377ace528148d15bd.jpg https://telegra.ph/file/e006737306ad1c5c16192.jpg https://telegra.ph/file/f8b495d98fd4d89c99150.jpg https://telegra.ph/file/320cdc500bc7e3d1c9e94.jpg https://telegra.ph/file/90ea7771a7c61e2d45d72.jpg https://telegra.ph/file/0d6adc21a51a32c3ac803.jpg https://telegra.ph/file/3fd5587f5bf4c3c107c91.jpg https://telegra.ph/file/2182f0c156d4ae25c8913.jpg
+
+WELCOM_TEXT - 👋 HEY {user}
+WELCOME TO {chat}#
+
+DEVELOPED BY LATHEESH

@@ -15,3 +15,20 @@ async def throw_dice(client, message: Message):
     while m.dice.value != 6:
         await m.delete()
         m = await client.send_dice(c, "🎲")
+
+
+
+
+@Client.on_message(filters.command("dice"))
+async def throw_dice(client, message: Message):
+    six = False
+
+    c = message.chat.id
+    if not six:
+        return await client.send_dice(c, "🎰")
+
+    m = await client.send_dice(c, "🎰")
+
+    while m.dice.value != 6:
+        await m.delete()
+        m = await client.send_dice(c, "🎰")

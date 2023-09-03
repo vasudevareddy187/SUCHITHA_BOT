@@ -19,7 +19,7 @@ async def throw_dice(client, message: Message):
 
 
 
-@Client.on_message(filters.command("dice"))
+@Client.on_message(filters.command("spinner"))
 async def throw_dice(client, message: Message):
     six = False
 

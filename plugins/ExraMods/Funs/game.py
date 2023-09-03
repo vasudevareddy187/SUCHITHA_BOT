@@ -20,7 +20,7 @@ async def throw_dice(client, message: Message):
 
 
 @Client.on_message(filters.command("spinner"))
-async def throw_dice(client, message: Message):
+async def spinner_throw(client, message: Message):
     six = False
 
     c = message.chat.id

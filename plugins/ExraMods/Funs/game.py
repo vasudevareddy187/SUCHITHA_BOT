@@ -49,7 +49,7 @@ async def arrow_throw(client, message: Message):
         m = await client.send_dice(c, "🎯")
 
     
-@Client.on_message(filters.command(aim"))
+@Client.on_message(filters.command("aim"))
 async def ball_throw(client, message: Message):
     six = False
 

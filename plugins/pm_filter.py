@@ -46,97 +46,115 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         search, files, offset, total_results = pmspoll
     pre = 'pmfilep' if PROTECT_CONTENT else 'pmfile'
 
-    if SHORT_URL and SHORT_API:          
-        if SINGLE_BUTTON:
-            btn = [[InlineKeyboardButton(text=f"[{get_size(file.file_size)}] {file.file_name}", url=await get_shortlink(f"https://telegram.dog/{temp.U_NAME}?start=pre_{file.file_id}"))] for file in files ]
-        else:
-            btn = [[InlineKeyboardButton(text=f"{file.file_name}", url=await get_shortlink(f"https://telegram.dog/{temp.U_NAME}?start=pre_{file.file_id}")),
-                    InlineKeyboardButton(text=f"{get_size(file.file_size)}", url=await get_shortlink(f"https://telegram.dog/{temp.U_NAME}?start=pre_{file.file_id}"))] for file in files ]
-    else:        
-        if SINGLE_BUTTON:
-            btn = [[InlineKeyboardButton(text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}')] for file in files ]
-        else:
-            btn = [[InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'),
-                    InlineKeyboardButton(text=f"{get_size(file.file_size)}", callback_data=f'{pre}#{file.file_id}')] for file in files ]  
-    btn.insert(0, [
-    InlineKeyboardButton(text="⚡ʜᴏᴡ 2 ᴅᴏᴡɴʟᴏᴅ⚡", url=f"URL")
-])
-	    
-    if offset != "":
-        key = f"{message.chat.id}-{message.id}"
-        temp.PM_BUTTONS[key] = search
-        req = message.from_user.id if message.from_user else 0
-        btn.append(
-            [InlineKeyboardButton(text=f"📄 𝗣𝗮𝗴𝗲 1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
-            InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ➡️", callback_data=f"pmnext_{req}_{key}_{offset}")] 
-        )
+    if SHORT_URL and SHORT_API:
+    if SINGLE_BUTTON:
+        message = [
+            f"[{get_size(file.file_size)}] {file.file_name}\n"
+            f"{await get_shortlink(f'https://telegram.dog/{temp.U_NAME}?start=pre_{file.file_id}')}"
+            for file in files
+        ]
     else:
-        btn.append(
-            [InlineKeyboardButton(text="📄 𝗣𝗮𝗴𝗲 1/1", callback_data="pages")] 
-        )
-    if PM_IMDB.strip().lower() in ["true", "yes", "1", "enable", "y"]:
-        imdb = await get_poster(search)
+        message = [
+            f"{file.file_name}\n"
+            f"{await get_shortlink(f'https://telegram.dog/{temp.U_NAME}?start=pre_{file.file_id}')}\n"
+            f"{get_size(file.file_size)}"
+            for file in files
+        ]
+else:
+    if SINGLE_BUTTON:
+        message = [
+            f"[{get_size(file.file_size)}] {file.file_name}\n"
+            f"{pre}#{file.file_id}"
+            for file in files
+        ]
     else:
-        imdb = None
-    TEMPLATE = IMDB_TEMPLATE
-    if imdb:
-        cap = TEMPLATE.format(
-            group = message.chat.title,
-            requested = message.from_user.mention,
-            query = search,
-            title = imdb['title'],
-            votes = imdb['votes'],
-            aka = imdb["aka"],
-            seasons = imdb["seasons"],
-            box_office = imdb['box_office'],
-            localized_title = imdb['localized_title'],
-            kind = imdb['kind'],
-            imdb_id = imdb["imdb_id"],
-            cast = imdb["cast"],
-            runtime = imdb["runtime"],
-            countries = imdb["countries"],
-            certificates = imdb["certificates"],
-            languages = imdb["languages"],
-            director = imdb["director"],
-            writer = imdb["writer"],
-            producer = imdb["producer"],
-            composer = imdb["composer"],
-            cinematographer = imdb["cinematographer"],
-            music_team = imdb["music_team"],
-            distributors = imdb["distributors"],
-            release_date = imdb['release_date'],
-            year = imdb['year'],
-            genres = imdb['genres'],
-            poster = imdb['poster'],
-            plot = imdb['plot'],
-            rating = imdb['rating'],
-            url = imdb['url'],
-            **locals()
-        )
-    else:
-        cap = f"Here is what i found for your query {search}"
-    if imdb and imdb.get('poster'):
-        try:
-            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(IMDB_DELET_TIME)
-            await hehe.delete()            
-        except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
-            pic = imdb.get('poster')
-            poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))           
-            await asyncio.sleep(IMDB_DELET_TIME)
-            await hmm.delete()            
-        except Exception as e:
-            logger.exception(e)
-            cdp = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(IMDB_DELET_TIME)
-            await cdp.delete()
-    else:
-        abc = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        message = [
+            f"{file.file_name}\n"
+            f"{pre}#{req}#{file.file_id}\n"
+            f"{get_size(file.file_size)}"
+            for file in files
+        ]
+    
+message.insert(0, "⚡ʜᴏᴡ 2 ᴅᴏᴡɴʟᴏᴀᴅ⚡\nURL")
+
+if offset != "":
+    key = f"{message.chat.id}-{message.id}"
+    temp.PM_BUTTONS[key] = search
+    req = message.from_user.id if message.from_user else 0
+    message.append(
+        f"📄 𝗣𝗮𝗴𝗲 1/{math.ceil(int(total_results) / 6)}\n"
+        f"𝗡𝗲𝘅𝘁 ➡️"
+    )
+else:
+    message.append("📄 𝗣𝗮𝗴𝗲 1/1")
+
+if PM_IMDB.strip().lower() in ["true", "yes", "1", "enable", "y"]:
+    imdb = await get_poster(search)
+else:
+    imdb = None
+
+TEMPLATE = IMDB_TEMPLATE
+
+if imdb:
+    cap = TEMPLATE.format(
+        group=message.chat.title,
+        requested=message.from_user.mention,
+        query=search,
+        title=imdb['title'],
+        votes=imdb['votes'],
+        aka=imdb["aka"],
+        seasons=imdb["seasons"],
+        box_office=imdb['box_office'],
+        localized_title=imdb['localized_title'],
+        kind=imdb['kind'],
+        imdb_id=imdb["imdb_id"],
+        cast=imdb["cast"],
+        runtime=imdb["runtime"],
+        countries=imdb["countries"],
+        certificates=imdb["certificates"],
+        languages=imdb["languages"],
+        director=imdb["director"],
+        writer=imdb["writer"],
+        producer=imdb["producer"],
+        composer=imdb["composer"],
+        cinematographer=imdb["cinematographer"],
+        music_team=imdb["music_team"],
+        distributors=imdb["distributors"],
+        release_date=imdb['release_date'],
+        year=imdb['year'],
+        genres=imdb['genres'],
+        poster=imdb['poster'],
+        plot=imdb['plot'],
+        rating=imdb['rating'],
+        url=imdb['url'],
+        **locals()
+    )
+else:
+    cap = f"Here is what I found for your query: {search}"
+
+if imdb and imdb.get('poster'):
+    try:
+        hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap)
         await asyncio.sleep(IMDB_DELET_TIME)
-        await abc.delete()        
-    if pmspoll:
-        await msg.message.delete()
+        await hehe.delete()            
+    except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
+        pic = imdb.get('poster')
+        poster = pic.replace('.jpg', "._V1_UX360.jpg")
+        hmm = await message.reply_photo(photo=poster, caption=cap)           
+        await asyncio.sleep(IMDB_DELET_TIME)
+        await hmm.delete()            
+    except Exception as e:
+        logger.exception(e)
+        cdp = await message.reply_text(cap)
+        await asyncio.sleep(IMDB_DELET_TIME)
+        await cdp.delete()
+else:
+    abc = await message.reply_text(cap)
+    await asyncio.sleep(IMDB_DELET_TIME)
+    await abc.delete()
+
+if pmspoll:
+    await msg.message.delete()
 
 
 async def pm_spoll_choker(msg):
